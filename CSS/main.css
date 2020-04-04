@@ -1,0 +1,173 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-size: 16pt;
+    color:#000000;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .container {
+        width: 660px;
+    }
+}
+
+@media (max-width: 480) {
+    .container {
+        width: 360px;
+    }
+}
+
+/* блок header */
+
+body h3 {
+    font-size: 20pt;
+    margin-top: 13px;
+    margin-left: 40px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    body h3 {
+        color: #0f5c8a;
+    }
+}
+
+#header {
+    position: absolute;
+    top: 0px;
+    height: 60px;
+}
+
+#header::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 20px;
+    background: #0f5c8a;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* блок с кнопками */
+
+.content .container {
+    margin-top: 60px;
+    padding: 10px;
+    width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #f0f0f0;
+}
+
+.content .container {
+    display: flex;
+}
+
+.content button {
+    border: none;
+    background-color: #f0f0f0;
+    display: block;
+    height: 90px;
+    width: 390px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    font-size: 21px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .content button {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480) {
+    .content button {
+        display: none;
+    }
+}
+
+.content button:focus {
+    background-color: #cccccc;
+}
+
+.content .content__btn5 {
+    margin-bottom: 0px;
+}
+
+/* блок со слайдами */
+
+.content .content__slides {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content .content__slides img {
+    height: 320px;
+    width: 570px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .content .content__slides img {
+        height: 250px;
+        width: 370px;
+    }
+
+    .content .content__slides p {
+        font-size: 14pt;
+    }
+}
+
+/* говнокод, но по-другому не получилось*/
+.content__slides .content__1st-slide {
+    display: none;
+}
+
+.content__slides .content__2nd-slide {
+    display: none;
+}
+
+.content__slides .content__3rd-slide {
+    display: none;
+}
+
+.content__slides .content__4th-slide {
+    display: none;
+}
+
+.content__slides .content__5th-slide {
+    display: none;
+}
+
+@media (max-width: 480) {
+    .content__buttons button {
+        display: none;
+    }
+
+    .content__slides .content__1st-slide {
+        display: block;
+    }
+    
+    .content__slides .content__2nd-slide {
+        display: block;
+    }
+    
+    .content__slides .content__3rd-slide {
+        display: block;
+    }
+    
+    .content__slides .content__4th-slide {
+        display: block;
+    }
+    
+    .content__slides .content__5th-slide {
+        display: block;
+    }
+} 
